@@ -22,34 +22,6 @@ By the end of this activity, you will have demonstrated your ability to:
 3. Write a function called `removeLastItem` that removes the last item from the `shoppingList` array
 4. Write a function called `displayList` that logs all items in the `shoppingList` array to the console
 
-### Implementation
-
-The implementation includes the following functions:
-
-#### `addItem(item)`
-
-- **Purpose**: Adds a new item to the end of the shopping list
-- **Parameters**: `item` (string) - The item to add to the list
-- **Method Used**: `push()` - Adds element to the end of array
-- **Feedback**: Logs confirmation message when item is added
-
-#### `removeLastItem()`
-
-- **Purpose**: Removes and returns the last item from the shopping list
-- **Parameters**: None
-- **Method Used**: `pop()` - Removes and returns the last element
-- **Error Handling**: Checks if array is empty before removing
-- **Return Value**: The removed item, or `null` if list is empty
-- **Feedback**: Logs the removed item or empty list message
-
-#### `displayList()`
-
-- **Purpose**: Displays all items in the shopping list in a numbered format
-- **Parameters**: None
-- **Method Used**: `forEach()` - Iterates through array elements
-- **Display Format**: Numbered list (1. Item1, 2. Item2, etc.)
-- **Empty Handling**: Shows "Shopping list is empty" message when no items
-
 ### How to Test
 
 1. Open `index.html` in a web browser
@@ -70,22 +42,6 @@ removeLastItem();
 
 // Display updated list
 displayList();
-```
-
-### Expected Output
-
-```
-Added "Apples" to the shopping list.
-Added "Bread" to the shopping list.
-Added "Milk" to the shopping list.
-Current shopping list:
-1. Apples
-2. Bread
-3. Milk
-Removed "Milk" from the shopping list.
-Current shopping list:
-1. Apples
-2. Bread
 ```
 
 ### Key Features
@@ -124,7 +80,6 @@ Current shopping list:
 
 ### How to Test Task 2
 
-```javascript
 // Test duplicate prevention
 addItem("Apples");
 addItem("Bread");
@@ -140,36 +95,3 @@ filterItems("apple"); // Should find 'Apples' and 'Apple Juice'
 filterItems("bread"); // Should find 'Bread'
 filterItems("milk"); // Should show no matches
 filterItems("APP"); // Should find items containing 'app' (case-insensitive)
-```
-
-### Expected Output for Task 2
-
-```
-Added "Apples" to the shopping list.
-Added "Bread" to the shopping list.
-Added "Apple Juice" to the shopping list.
-"apples" is already in the shopping list. Item not added.
-"APPLES" is already in the shopping list. Item not added.
-Current shopping list:
-1. Apples
-2. Bread
-3. Apple Juice
-Items containing "apple":
-1. Apples
-2. Apple Juice
-Items containing "bread":
-1. Bread
-No items found containing "milk".
-Items containing "APP":
-1. Apples
-2. Apple Juice
-```
-
-## Files Structure
-
-```
-Lab_4.2_Array_Manipulation/
-├── index.html          # HTML file that loads the JavaScript
-├── index.js            # Main JavaScript implementation
-└── Readme.md          # This documentation file
-```
