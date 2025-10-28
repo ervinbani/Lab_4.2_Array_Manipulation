@@ -95,14 +95,6 @@ Current shopping list:
 - **Clean Display**: Items are shown in a readable numbered format
 - **Maintainable Code**: Functions are well-documented and follow best practices
 
-### Array Methods Used
-
-| Method      | Purpose                                  | Example                                 |
-| ----------- | ---------------------------------------- | --------------------------------------- |
-| `push()`    | Adds element to end of array             | `array.push('item')`                    |
-| `pop()`     | Removes and returns last element         | `const item = array.pop()`              |
-| `forEach()` | Executes function for each array element | `array.forEach((item, index) => {...})` |
-
 ## Task 2: Filter and Search an Array
 
 ### Requirements
@@ -172,15 +164,6 @@ Items containing "APP":
 1. Apples
 2. Apple Juice
 ```
-
-### Additional Array Methods Used in Task 2
-
-| Method          | Purpose                                        | Example                           |
-| --------------- | ---------------------------------------------- | --------------------------------- |
-| `some()`        | Tests if at least one element passes condition | `array.some(item => condition)`   |
-| `filter()`      | Creates new array with elements passing test   | `array.filter(item => condition)` |
-| `toLowerCase()` | Converts string to lowercase for comparison    | `string.toLowerCase()`            |
-| `includes()`    | Checks if string contains substring            | `string.includes(searchTerm)`     |
 
 ## Files Structure
 
